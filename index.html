@@ -5,7 +5,7 @@
         <title>Karin`s Marketing Side</title>
 
     <!---- This is my grid stylesheet ---->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     <!---- This is my google fonts ---->
 
     <!---- This is my css stylesheet / I put this always last ---->
@@ -17,17 +17,108 @@
     <body>
 
     <!--------------- This is my header ------------------->
-        <header>
-            <div>
+        <header class="grid">
+            <div class="col-6">
                 <h2> Logo </h2>
             </div>
-            <nav>
+            <nav class="col-6">
                 <a href="#">About me</a>
                 <a href="#">Offers</a>
                 <a href="#">Contact</a>
             </nav>
         </header>
 
-    
+    <!-------------- This is my banner with a quote on it -------------------->
+
+        <section>
+            <div>
+                <span>"</span>
+            </div>
+            <div>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus vitae, praesentium blanditiis porro.</p>
+                <a href="#">Contact me</a>
+            </div>
+            <div>
+                <span>"</span>
+            </div>
+        </section>
+
+    <!-------------- This is my About me Section -------------------->
+
+    <section>
+        <div class="bg-image">
+            <!---- here is a background-image-->
+        </div>
+        <div>
+            <h1>CRM & E-Mail Marketing</h1>
+        </div>
+        <div>
+            <h2> What makes me stand out?</h2>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quae dolores commodi. </p>
+        </div>
+        <div>
+            <h2> What are my skills?</h2>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quae dolores commodi. </p>
+        </div>
+        <div>
+            <h2> What does this mean in detail?</h2>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quae dolores commodi. </p>
+        </div>
+        <div>
+            <h2> What makes my expertise special?</h2>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quae dolores commodi. </p>
+        </div>
+
+    </section>
+
+
+    <!----------------- This is my offer section ------------------>
+
+    <section>
+        <div>
+            <h1>Headline Offer 1</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, consectetur eligendi nam et cum earum omnis qui nemo dignissimos amet optio reprehenderit quaerat esse nobis laboriosam rerum iste modi eius.</p>
+        </div>
+        <div class="bg-offer">
+            <!----- This is my background-image offer 1----->
+        </div>
+        <div class="bg-offer">
+            <!----- This is my background-image offer 2----->
+        </div>
+        <div>
+            <h1>Headline Offer 2</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, consectetur eligendi nam et cum earum omnis qui nemo dignissimos amet optio reprehenderit quaerat esse nobis laboriosam rerum iste modi eius.</p>
+        </div>
+        <div>
+            <h1>Headline Offer 3</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, consectetur eligendi nam et cum earum omnis qui nemo dignissimos amet optio reprehenderit quaerat esse nobis laboriosam rerum iste modi eius.</p>
+        </div>
+        <div class="bg-offer">
+            <!----- This is my background-image offer 3----->
+        </div>
+    </section>
+
+    <!----------------------- This is my Contact form ---------------------->
+    <section class="grid">
+        <div class="col-4">
+            <div>
+                <!----- This is my background-image of round----->
+            </div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <nav>
+                <a href="#">Phone</a>
+                <a href="#">E-Mail</a>
+                <a href="#">LinkedIn</a>
+            </nav>
+        </div>
+        <div>
+                <!----- Here will be my form ----->
+
+        </div>
+
+    </section>
     </body>
 </html>

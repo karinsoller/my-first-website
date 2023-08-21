@@ -3,3 +3,26 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+/*--------- temporary styles for structural html -------------*/
+*{
+    padding: 0.5rem;
+    border: 1px solid rgb(240,240,240);
+}
+
+body{border: none;}
+html{border: none;}
+
+/*------------ Image Styles -------------------*/
+
+.bg-image{
+    background-image: url('/images/\ karin2.jpg');
+    background-size: cover;
+    min-height: 10rem;
+}
+
+.bg-offer{
+    background-color: rgb(235, 198, 130);
+    min-height: 10rem;
+}
