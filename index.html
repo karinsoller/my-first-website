@@ -4,6 +4,9 @@
     <head>
         <title>Karin`s Marketing Side</title>
 
+    <!------ This is my fontawesome icon --------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!---- This is my grid stylesheet ---->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     <!---- This is my google fonts ---->
@@ -109,16 +112,51 @@
             </div>
 
             <nav>
+                <i class="fa-solid fa-phone"></i>
                 <a href="#">Phone</a>
+                <i class="fa-solid fa-envelope"></i>
                 <a href="#">E-Mail</a>
+                <i class="fa-brands fa-linkedin"></i>
                 <a href="#">LinkedIn</a>
             </nav>
         </div>
-        <div>
-                <!----- Here will be my form ----->
+        <div class="col-8">
+            <form>
+  
+                <label for="_name"> Name </label>
+                <input type="text" name="_name" id="_name" placeholder="Name" />
 
+                <label for="_name"> Surname </label>
+                <input type="text" name="_name" id="_name" placeholder="Name" />
+              
+                <label for="_replyto"> Email-Address </label>
+                <input type="email" name="_replyto" id="_replyto" placeholder="Email" />
+
+                <label for="_replyto"> Phone-Number </label>
+                <input type="tel" name=”phone-no” id="_replyto" placeholder="Phone" />
+              
+                <label for="message"> Tell me what you need... </label>
+                <textarea name="message" id="message" placeholder="Hey I need help with marketing"></textarea>
+              
+                <button type="submit"> SUBMIT </button>
+                
+              </form> 
         </div>
 
     </section>
+
+
+    <!----------------------- This is my footer ---------------------->
+
+    <footer class="grid">
+        <div class="col-6">
+            <span>© 2023</span>
+        </div>
+        <nav class="col-6">
+            <a href="#">Imprint</a>
+            <a href="#">Data Privacy</a>
+        </nav>
+    </footer>
+
     </body>
 </html>
