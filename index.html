@@ -9,7 +9,12 @@
 
     <!---- This is my grid stylesheet ---->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    
     <!---- This is my google fonts ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap" rel="stylesheet">    
+    
 
     <!---- This is my css stylesheet / I put this always last ---->
     <link rel="stylesheet" href="/style.css">
@@ -33,43 +38,45 @@
 
     <!-------------- This is my banner with a quote on it -------------------->
 
-        <section>
-            <div>
-                <span>"</span>
-            </div>
-            <div>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus vitae, praesentium blanditiis porro.</p>
-                <a href="#">Contact me</a>
-            </div>
-            <div>
-                <span>"</span>
-            </div>
+        <section class="grid bg-banner">
+                <div class="col-1">
+                    <span>"</span>
+                </div>
+                <div class="col-10">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus vitae, praesentium blanditiis porro.</p>
+                    <a href="#">Contact me</a>
+                </div>
+                <div class="col-1">
+                    <span>"</span>
+                </div>
         </section>
 
     <!-------------- This is my About me Section -------------------->
 
-    <section>
-        <div class="bg-image">
+    <section class="grid">
+        <div class="bg-image padded col-4">
             <!---- here is a background-image-->
         </div>
-        <div>
-            <h1>CRM & E-Mail Marketing</h1>
-        </div>
-        <div>
-            <h2> What makes me stand out?</h2>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quae dolores commodi. </p>
-        </div>
-        <div>
-            <h2> What are my skills?</h2>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quae dolores commodi. </p>
-        </div>
-        <div>
-            <h2> What does this mean in detail?</h2>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quae dolores commodi. </p>
-        </div>
-        <div>
-            <h2> What makes my expertise special?</h2>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quae dolores commodi. </p>
+        <div class="col-8 padded">
+            <div>
+                <h1>CRM & E-Mail Marketing</h1>
+            </div>
+            <div >
+                <h2> What makes me stand out?</h2>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quae dolores commodi. </p>
+            </div>
+            <div >
+                <h2> What are my skills?</h2>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quae dolores commodi. </p>
+            </div>
+            <div >
+                <h2> What does this mean in detail?</h2>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quae dolores commodi. </p>
+            </div>
+            <div >
+             <h2> What makes my expertise special?</h2>
+             <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quae dolores commodi. </p>
+            </div>
         </div>
 
     </section>
@@ -77,33 +84,33 @@
 
     <!----------------- This is my offer section ------------------>
 
-    <section>
-        <div>
+    <section class="grid">
+        <div class="padded col-6">
             <h1>Headline Offer 1</h1>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, consectetur eligendi nam et cum earum omnis qui nemo dignissimos amet optio reprehenderit quaerat esse nobis laboriosam rerum iste modi eius.</p>
         </div>
-        <div class="bg-offer">
+        <div class="bg-offer col-6">
             <!----- This is my background-image offer 1----->
         </div>
-        <div class="bg-offer">
+        <div class="bg-offer col-6">
             <!----- This is my background-image offer 2----->
         </div>
-        <div>
+        <div class="padded col-6">
             <h1>Headline Offer 2</h1>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, consectetur eligendi nam et cum earum omnis qui nemo dignissimos amet optio reprehenderit quaerat esse nobis laboriosam rerum iste modi eius.</p>
         </div>
-        <div>
+        <div class="padded col-6">
             <h1>Headline Offer 3</h1>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, consectetur eligendi nam et cum earum omnis qui nemo dignissimos amet optio reprehenderit quaerat esse nobis laboriosam rerum iste modi eius.</p>
         </div>
-        <div class="bg-offer">
+        <div class="bg-offer col-6">
             <!----- This is my background-image offer 3----->
         </div>
     </section>
 
     <!----------------------- This is my Contact form ---------------------->
     <section class="grid">
-        <div class="col-4">
+        <div class="col-4 bg-form">
             <div>
                 <!----- This is my background-image of round----->
             </div>
@@ -124,19 +131,16 @@
             <form>
   
                 <label for="_name"> Name </label>
-                <input type="text" name="_name" id="_name" placeholder="Name" />
-
-                <label for="_name"> Surname </label>
-                <input type="text" name="_name" id="_name" placeholder="Name" />
-              
+                <input type="text" name="_name" id="_name" placeholder="Your Name & Surname" />
+           
                 <label for="_replyto"> Email-Address </label>
-                <input type="email" name="_replyto" id="_replyto" placeholder="Email" />
+                <input type="email" name="_replyto" id="_replyto" placeholder="Your Email" />
 
                 <label for="_replyto"> Phone-Number </label>
-                <input type="tel" name=”phone-no” id="_replyto" placeholder="Phone" />
+                <input type="tel" name=”phone-no” id="_replyto" placeholder="Your Phone" />
               
-                <label for="message"> Tell me what you need... </label>
-                <textarea name="message" id="message" placeholder="Hey I need help with marketing"></textarea>
+                <label for="message"> Message </label>
+                <textarea name="message" id="message" placeholder="Tell me, what marketing-help you need..."></textarea>
               
                 <button type="submit"> SUBMIT </button>
                 
