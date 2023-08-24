@@ -23,6 +23,16 @@ h2 {
     font-size: 1.2rem;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 300;
+}
+
+p{
+    line-height: 1.5;
+}
+
 p, form{
     font-weight: 100;
 }
@@ -75,17 +85,18 @@ form button:hover{
 body{border: none;}
 html{border: none;}
 
-/*------------ Image Styles -------------------*/
+
+/*------------Image Styles -------------*/
 
 .bg-image{
     background-image: url('/images/\ karin2.jpg');
     background-size: cover;
-    min-height: 10rem;
+    min-height: 10vh;
 }
 
 .bg-offer{
     background-color:#b7b5ab ;
-    min-height: 10rem;
+    min-height: 46vh;
 }
 
 /*------------- Universal Styles & Utility Classes --------------*/
@@ -93,16 +104,46 @@ html{border: none;}
 .padded         {padding: 5%;}
 .padded-sm      {padding: 1rem;}
 
+.quote {
+    font-size: 1.5rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.quote-a {
+    border: 2px solid #5e7e89;
+    background-color: white;
+}
+
+.quote-a:hover{
+    border: 2px solid white;
+    background-color: #5e7e89;
+    color: white;
+}
+
 .bg-dark{
     background-color:#5e7e89;
     color: white;
 }
 
+.text-left      {text-align: left;}
+.text-right     {text-align:right;}
+.text-center    {text-align:center;}
 
-/*----------------Background Images -----------------*/
+.tall-50        {min-height: 50vh};
+.tall-60        {min-height: 60vh;}
+.tall-70        {min-height: 70vh;}
+.tall-80        {min-height: 80vh;}
+.tall-90        {min-height: 90vh;}
+.tall-100       {min-height: 100vh;}
+
+
+/*---------------- Image & Background Images -----------------*/
+
+
 
 .bg-banner{
-    background-image: url('/images/karin5.JPG');
+    background-color:#b7b5ab ;
     background-size: cover;
     min-height: 60vh;
     background-position: center;
@@ -114,4 +155,6 @@ html{border: none;}
     background-size: cover;
     border-radius: 50% 50%;
 }
+
+
 
