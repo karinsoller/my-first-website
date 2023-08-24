@@ -54,6 +54,7 @@ footer{
 }
 
 
+
 p, form{
     font-weight: 100;
 }
@@ -99,13 +100,15 @@ form button:hover{
 
 /*--------- temporary styles for structural html -------------*/
 *{
-    padding: 0.5rem;
-    border: 1px solid rgb(240,240,240);
+    padding: 0.5rem;  
 }
 
+/*
+border: 1px solid rgb(240,240,240);
 body{border: none;}
 html{border: none;}
 
+*/ 
 
 /*------------Image Styles -------------*/
 
