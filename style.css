@@ -4,10 +4,15 @@
 */
 
 
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+[class*="col-"], [class*="col_"], [class~="col"]{
+    padding: 0;
 }
 
 body{
@@ -113,7 +118,7 @@ html{border: none;}
 /*------------Image Styles -------------*/
 
 .bg-image{
-    background-image: url('/images/\ karin2.jpg');
+    background-image: url('/images/karin2.jpg');
     background-size: cover;
     min-height: 10vh;
 }
@@ -123,11 +128,15 @@ html{border: none;}
     min-height: 46vh;
 }
 
+
 /*------------- Universal Styles & Utility Classes --------------*/
 
 .padded-lg      {padding: 10%;}
 .padded         {padding: 5%;}
 .padded-sm      {padding: 1rem;}
+.padded-l-r     {
+    padding-left: 1%;
+    padding-right: 1%;}
 
 .quote {
     font-size: 1.5rem;
@@ -186,9 +195,12 @@ html{border: none;}
 }
 
 .bg-form{
-    background-image: url('/images/\ karin2.jpg');
+    background-image: url('/images/karin2.jpg');
     background-size: cover;
     border-radius: 50% 50%;
+    padding-bottom: 100%;
+    margin-bottom: 2rem;
+    background-position: 50% 50%;
 
 }
 
